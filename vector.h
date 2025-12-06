@@ -29,8 +29,9 @@ public:
     void begin()
     {
     }
-    void getCapacity()
+    int getCapacity()
     {
+        return capacity;
     }
     void clear()
     {
@@ -77,8 +78,9 @@ public:
     void shrink_to_fit()
     {
     }
-    void getSize()
+    int getSize()
     {
+        return size;
     }
     void swap() {}
 };
