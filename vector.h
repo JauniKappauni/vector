@@ -3,7 +3,7 @@ class vector
 private:
     unsigned int size;
     unsigned int capacity;
-    int *data;
+    int *data = nullptr;
 
 public:
     vector()
