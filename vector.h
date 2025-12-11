@@ -54,8 +54,9 @@ public:
     void insert()
     {
     }
-    void max_size()
+    int max_size()
     {
+        return capacity;
     }
     void pop_back()
     {
