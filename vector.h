@@ -63,8 +63,18 @@ public:
     void pop_back()
     {
     }
-    void push_back()
+    void push_back(unsigned int offset)
     {
+        int *new_data = new int[offset];
+        if (size >= capacity)
+        {
+            capacity *= 2;
+            for (unsigned int i = 0; i < size; i++)
+            {
+                new_data[i] = data[i];
+                i++;
+            }
+        }
     }
     void rbegin()
     {
