@@ -36,8 +36,9 @@ public:
     void clear()
     {
     }
-    void getData()
+    int *getData()
     {
+        return data;
     }
     void empty()
     {
