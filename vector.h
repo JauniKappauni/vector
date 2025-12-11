@@ -20,8 +20,9 @@ public:
     void assign()
     {
     }
-    void at()
+    int at(unsigned int i)
     {
+        return data[i];
     }
     void back()
     {
