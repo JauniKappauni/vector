@@ -111,5 +111,9 @@ public:
     {
         return size;
     }
-    void swap() {}
+    void swap(vector a, vector b)
+    {
+        for (unsigned int i = 0; i < a.getSize(); i++)
+            b.getData()[i] = a.getData()[i];
+    }
 };
