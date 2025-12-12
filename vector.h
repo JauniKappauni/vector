@@ -74,6 +74,9 @@ public:
                 new_data[i] = data[i];
                 i++;
             }
+            delete data;
+
+            data = new_data;
         }
     }
     void rbegin()
@@ -90,6 +93,19 @@ public:
     }
     void shrink_to_fit()
     {
+        int *new_data = new int[size];
+        if (capacity > size)
+        {
+            capacity = size;
+            for (unsigned int i = 0; i < size; i++)
+            {
+                new_data[i] = data[i];
+                i++;
+            }
+            delete data;
+
+            data = new_data;
+        }
     }
     int getSize()
     {
